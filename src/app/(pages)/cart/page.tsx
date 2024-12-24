@@ -1,5 +1,6 @@
 'use client';
+import { CartView } from '@/components/features/cart/CartView';
 
 export default function Page() {
-  return <h1>Your Cart</h1>;
+  return <CartView  />;
 }
