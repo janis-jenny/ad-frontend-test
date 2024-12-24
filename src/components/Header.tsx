@@ -7,9 +7,9 @@ export default function Header() {
           <Link href="/" className="text-2xl font-bold">
           <img src="/images/GamerShop.png" alt="Logo" className="" />
           </Link>
-            <Link href="/cart" className="p-2">
-            <img src="/images/at-Icons.png" alt="Cart" className="h-6 w-6" />
-            </Link>
+          <Link href="/cart" className="p-2">
+          <img src="/images/cart-icon.png" alt="Cart" className="h-6 w-6" />
+          </Link>
       </nav>
       </header>
   );

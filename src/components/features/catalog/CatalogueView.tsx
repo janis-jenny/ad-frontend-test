@@ -105,12 +105,11 @@ export default function CatalogPage() {
             </div>
           ) : hasMore && (
             <Button
-              variant="secondary"
-              className="mt-10"
-              responsiveFullWidth
+              variant="primary"
+              className="mt-10 lg:w-2/12 w-full"
               onClick={handleSeeMore}
             >
-              See More
+              SEE MORE
             </Button>
           )}
       </div>

@@ -14,12 +14,12 @@ export const Button: React.FC<ButtonProps> = ({
   className = '',
   ...props
 }) => {
-  const baseStyles = 'py-4 px-6 rounded-lg transition-colors duration-200 font-bold text-sm lg:text-base ';
+  const baseStyles = 'rounded-lg transition-colors duration-200 font-bold text-sm lg:text-base ';
   
   const variants = {
-    primary: 'bg-blue-500 hover:bg-blue-600 text-white',
-    secondary: 'bg-gray-600 hover:bg-gray-700 text-white sm:w-full',
-    outline: 'border border-gray-500 hover:bg-gray-50 text-gray-500'
+    primary: 'bg-gray-600 hover:bg-gray-700 text-white sm:w-full py-4 px-6',
+    secondary: 'bg-white text-gray-500',
+    outline: 'border border-gray-500 hover:bg-gray-50 text-gray-500 py-4 px-6'
   };
 
   const widthStyles = fullWidthOnAllScreens
