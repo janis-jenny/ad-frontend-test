@@ -70,17 +70,17 @@ export default function CatalogPage() {
     <>
       <div className="border-b border-gray-200">
       <div className="container mx-auto px-4 pt-6 pb-0">
-        <h2 className="text-2xl lg:text-4xl font-bold text-gray-500">Top Sellers</h2>
+        <h2 className="text-2xl lg:text-4xl uppercase lg:capitalize font-bold text-gray-500">Top Sellers</h2>
           <div className="flex flex-wrap justify-between lg:justify-end mx-auto my-12 py-3">
-            <label htmlFor="genre" className="text-gray-500 font-bold text-xl lg:text-2xl">
+            <label htmlFor="genre" className="text-gray-500 font-bold text-xl lg:pr-2">
             Genre
             </label>
-            <span className="border-r border-gray-500 pl-4 mr-6"></span>
+            <span className="border-r border-gray-500 lg:pl-4 mr-9 h-6 pt-2"></span>
             <select
               id="genre"
               value={genre}
               onChange={handleGenreChange}
-              className="text-gray-500 text-base lg:text-2xl font-normal rounded-lg focus:outline-none "
+              className="text-gray-500 text-xl font-normal rounded-lg focus:outline-none w-full lg:w-auto max-w-[200px] truncate"
             >
               <option value="">All</option>
               {genres.map((g) => (
