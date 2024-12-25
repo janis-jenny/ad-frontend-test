@@ -10,16 +10,16 @@ export function CartView() {
   return (
     <div className="min-h-screen">
       <div className="container mx-auto">
-        <div className="flex items-center mb-8 pt-2">
+        <div className="flex items-center mb-8 lg:pt-2">
           <Link 
             href="/" 
             className="flex items-center gap-2 text-gray-500 font-medium text-base" 
           >
-            <Image src="/images/arrow-left.png" alt="Logo" className="" /> Back to Catalog
+            <Image src="/images/arrow-left.png" alt="Logo" width={24} height={24} /> Back to Catalog
           </Link>
         </div>
 
-        <div className="text-gray-500 rounded-lg py-6 px-2">
+        <div className="text-gray-500 rounded-lg py-4 lg:py-6 px-2">
           <h1 className="text-2xl font-bold mb-2 text-2xl lg:text-4xl">Your Cart</h1>
           <p className="mb-6 text-xl font-normal lg:text-2xl">{totalItems} {totalItems === 1 ? 'item' : 'items'}</p>
 
