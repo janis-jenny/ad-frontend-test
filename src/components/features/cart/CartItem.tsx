@@ -31,7 +31,7 @@ export default function CartItem({ item, onRemove, isLast }: Props) {
           variant='secondary'
           className="lg:hidden justify-start items-start text-gray-500 px-4 pt-1"
         >
-          <img src="/images/cancel-icon.png" alt="Cancel" className="h-6 w-6" />
+          <Image src="/images/cancel-icon.png" alt="Cancel" className="h-6 w-6" />
         </Button>
       </div>
       <div className="flex-grow justify-between">
@@ -44,7 +44,7 @@ export default function CartItem({ item, onRemove, isLast }: Props) {
                 variant='secondary'
                 className="hidden lg:block text-gray-500 px-2 pt-1"
               >
-                <img src="/images/cancel-icon.png" alt="Cancel" className="h-6 w-6" />
+                <Image src="/images/cancel-icon.png" alt="Cancel" className="h-6 w-6" />
               </Button>
             </div>
             <h3 className="text-lg lg:text-xl text-gray-500 font-bold">{item.name}</h3>

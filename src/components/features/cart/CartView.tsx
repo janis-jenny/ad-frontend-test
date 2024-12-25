@@ -1,6 +1,7 @@
 import { useCart } from '@/hooks/useCart';
 import Link from 'next/link';
 import CartItem from './CartItem';
+import Image from 'next/image';
 import OrderSummary from './OrderSummary';
 
 export function CartView() {
@@ -14,7 +15,7 @@ export function CartView() {
             href="/" 
             className="flex items-center gap-2 text-gray-500 font-medium text-base" 
           >
-            <img src="/images/arrow-left.png" alt="Logo" className="" /> Back to Catalog
+            <Image src="/images/arrow-left.png" alt="Logo" className="" /> Back to Catalog
           </Link>
         </div>
 
