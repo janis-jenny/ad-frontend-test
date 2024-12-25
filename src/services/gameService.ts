@@ -5,9 +5,10 @@ export async function fetchGames(genre?: string, page: number = 1) {
   if (genre) params.append('genre', genre);
   params.append('page', page.toString());
   
-  const response = await fetch(
-    `${process.env.NEXT_PUBLIC_API_URL}/games?${params.toString()}`
-  );
+  const baseUrl = process.env.NEXT_PUBLIC_API_URL || '';
+  const url = `${baseUrl.replace(/\/+$/, '')}/api/games?${params.toString()}`;
+
+  const response = await fetch(url);
   if (!response.ok) throw new Error('Failed to fetch games');
   return response.json();
 }
