@@ -14,7 +14,7 @@ export default function GameCard({ game }: GameCardProps) {
   const isInCart = cart.some(item => item.id === game.id);
 
   return (
-    <div className="border-[0.5px] border-gray-400 rounded-xl overflow-hidden bg-white p-5">
+    <div className="border-[0.5px] border-gray-400 rounded-xl overflow-hidden bg-white p-5 w-full">
       <div className="relative mb-4 h-60 lg:h-60 lg:w-[332px]">
         <Image
           src={game.image}

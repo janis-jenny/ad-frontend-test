@@ -56,8 +56,8 @@ export default function CatalogPage() {
                 </div>
             </div>
           </div>
-          <div className="max-w-7xl mx-auto px-4 pt-6 mt-6 mb-4">
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10 max-w-7xl mx-auto">
+          <div className="max-w-7xl px-4 pt-6 mt-6 mb-4">
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
               {games.map((game) => (
                 <GameCard key={game.id} game={game} />
               ))}
