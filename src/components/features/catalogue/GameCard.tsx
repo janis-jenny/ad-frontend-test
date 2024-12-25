@@ -15,12 +15,11 @@ export default function GameCard({ game }: GameCardProps) {
 
   return (
     <div className="border-[0.5px] border-gray-400 rounded-xl overflow-hidden bg-white p-5">
-      <div className="relative mb-4 h-60 lg:h-60  lg:w-[332px]">
+      <div className="relative mb-4 h-60 lg:h-60 lg:w-[332px]">
         <Image
           src={game.image}
           alt={game.name}
           fill
-          sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
           className="object-cover rounded-t-2xl border-t"
           priority
         />

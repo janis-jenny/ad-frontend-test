@@ -19,7 +19,6 @@ export default function CartItem({ item, onRemove, isLast }: Props) {
             alt={item.name}
             fill
             className="object-cover rounded"
-            sizes="(max-width: 768px) 100vw, 128px"
           />
           {item.isNew && (
             <span className="absolute font-normal top-3 left-3 bg-gray-50 text-gray-500 px-3 py-2 h-8 leading-4 rounded text-base">
