@@ -1,7 +1,7 @@
 'use client';
-import CatalogueView from '@/components/features/catalogue/CatalogueView';
+import CatalogView from '@/components/features/catalog/CatalogView';
 
 export default function Page() {
-  return <CatalogueView />;
+  return <CatalogView />;
 }
 
